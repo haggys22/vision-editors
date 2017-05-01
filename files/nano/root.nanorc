@@ -1,0 +1,46 @@
+# Warning: This file is managed by puppet; DO NOT EDIT
+
+set tabsize 2
+set tabstospaces
+set cut
+set smooth
+set softwrap
+set wordbounds
+
+# From https://github.com/scopatz/nanorc
+include /usr/local/share/nano/Dockerfile.nanorc
+include /usr/local/share/nano/apacheconf.nanorc
+include /usr/local/share/nano/awk.nanorc
+include /usr/local/share/nano/c.nanorc
+include /usr/local/share/nano/cmake.nanorc
+include /usr/local/share/nano/coffeescript.nanorc
+include /usr/local/share/nano/conf.nanorc
+include /usr/local/share/nano/css.nanorc
+include /usr/local/share/nano/git.nanorc
+include /usr/local/share/nano/go.nanorc
+include /usr/local/share/nano/html.nanorc
+include /usr/local/share/nano/ini.nanorc
+include /usr/local/share/nano/js.nanorc
+include /usr/local/share/nano/json.nanorc
+include /usr/local/share/nano/makefile.nanorc
+include /usr/local/share/nano/man.nanorc
+include /usr/local/share/nano/markdown.nanorc
+include /usr/local/share/nano/nanorc.nanorc
+include /usr/local/share/nano/nginx.nanorc
+include /usr/local/share/nano/patch.nanorc
+include /usr/local/share/nano/perl.nanorc
+include /usr/local/share/nano/perl6.nanorc
+include /usr/local/share/nano/php.nanorc
+include /usr/local/share/nano/puppet.nanorc
+include /usr/local/share/nano/ruby.nanorc
+include /usr/local/share/nano/python.nanorc
+include /usr/local/share/nano/sed.nanorc
+include /usr/local/share/nano/systemd.nanorc
+include /usr/local/share/nano/vi.nanorc
+include /usr/local/share/nano/xml.nanorc
+include /usr/local/share/nano/yaml.nanorc
+include /usr/local/share/nano/zsh.nanorc
+
+# From Debian Package
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/debian.nanorc

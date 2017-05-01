@@ -1,0 +1,17 @@
+---
+fixtures:
+    repositories:
+        vim:
+            ref: "v2.4.0"
+            repo: "https://github.com/saz/puppet-vim"
+        vcsrepo:
+            ref: "1.3.1"
+            repo: "https://github.com/puppetlabs/puppetlabs-vcsrepo"
+        archive:
+            ref: "v0.5.1"
+            repo: "https://github.com/voxpupuli/puppet-archive"
+        stdlib:
+            ref: "4.9.0"
+            repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    symlinks:
+        vision_editors: '#{source_dir}'

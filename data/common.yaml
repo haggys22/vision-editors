@@ -8,7 +8,7 @@ vision_editors::intellij_idea::version: '2017.2.4'
 vision_editors::intellij_idea::install_target: '/opt'
 vision_editors::intellij_idea::timeout: 1200
 vision_editors::phpstorm::base_url: 'http://download.jetbrains.com/webide/'
-vision_editors::phpstorm::version: '2016.1.2'
+vision_editors::phpstorm::version: '2017.2.4'
 vision_editors::phpstorm::install_target: '/opt'
 vision_editors::phpstorm::timeout: 1200
 vision_editors::nano::nanorc_repo: 'git://github.com/scopatz/nanorc.git'

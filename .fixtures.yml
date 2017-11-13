@@ -11,7 +11,7 @@ fixtures:
       ref: "v1.3.0"
       repo: "https://github.com/voxpupuli/puppet-archive"
     stdlib:
-      ref: "4.16.0"
+      ref: "4.18.0"
       repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
   symlinks:
     vision_editors: '#{source_dir}'

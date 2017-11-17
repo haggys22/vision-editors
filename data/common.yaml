@@ -3,7 +3,7 @@ vision_editors::vim::pathogen_url: 'https://github.com/tpope/vim-pathogen.git'
 vision_editors::vim::theme_url: 'git://github.com/altercation/vim-colors-solarized.git'
 vision_editors::vim::manage_git_package: false
 vision_editors::vim::git_package_name: 'git'
-vision_editors::intellij_idea::base_url: 'http://download.jetbrains.com/idea/'
+vision_editors::intellij_idea::base_url: 'https://download-cf.jetbrains.com/idea/'
 vision_editors::intellij_idea::version: '2017.2.4'
 vision_editors::intellij_idea::install_target: '/opt'
 vision_editors::intellij_idea::timeout: 1200

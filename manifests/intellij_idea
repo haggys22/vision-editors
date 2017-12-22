@@ -1,10 +1,14 @@
 # Install Intellij Idea IDE
+
 class vision_editors::intellij_idea (
+
   String  $base_url,
   String  $version,
   String  $install_target,
   Integer $timeout,
+
 ){
+
   $url      = "${base_url}ideaIC-${version}.tar.gz"
   $filename = "${install_target}/ideaIC-${version}.tar.gz"
 
@@ -28,4 +32,5 @@ class vision_editors::intellij_idea (
     target    => "${install_target}/idea/bin/idea.sh",
     subscribe => Archive[$filename],
   }
+
 }

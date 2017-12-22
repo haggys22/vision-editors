@@ -1,5 +1,5 @@
 # Install and configure Emacs for root
-class vision_editors::emacs (){
+class vision_editors::emacs {
 
   # Install base package(s)
   package { 'emacs':

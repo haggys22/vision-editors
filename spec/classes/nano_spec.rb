@@ -17,12 +17,6 @@ describe 'vision_editors::nano' do
           is_expected.to contain_vcsrepo('/usr/local/share/nano')
         end
       end
-
-      context 'use nanorc file' do
-        it do
-          is_expected.to contain_file('/root/.nanorc').with_source('puppet:///modules/vision_editors/nano/root.nanorc')
-        end
-      end
     end
   end
 end

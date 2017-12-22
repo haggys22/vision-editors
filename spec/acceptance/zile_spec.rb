@@ -3,9 +3,9 @@ require 'spec_helper_acceptance'
 describe 'vision_editors::zile' do
   context 'with defaults' do
     it 'run idempotently' do
-      pp = <<-EOS
+      pp = <<-FILE
                 class { 'vision_editors::zile': }
-             EOS
+             FILE
       apply_manifest(pp, catch_failures: true)
       apply_manifest(pp, catch_changes: true)
     end

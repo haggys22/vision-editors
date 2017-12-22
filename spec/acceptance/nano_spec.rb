@@ -3,13 +3,13 @@ require 'spec_helper_acceptance'
 describe 'vision_editors::nano' do
   context 'with defaults' do
     it 'idempotentlies run' do
-      pp = <<-EOS
+      pp = <<-FILE
                 class { 'vision_editors::nano':
                   nanorc_repo        => 'git://github.com/scopatz/nanorc.git',
                   manage_git_package => true,
                   git_package_name   => 'git',
                 }
-             EOS
+             FILE
       apply_manifest(pp, catch_failures: true)
       apply_manifest(pp, catch_changes: true)
     end

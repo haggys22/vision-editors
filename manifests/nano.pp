@@ -1,19 +1,26 @@
 # Install and configure nano for root
+
 class vision_editors::nano (
+
   String  $nanorc_repo,
   Boolean $manage_git_package,
   String  $git_package_name,
-  ){
 
-  package { 'nano':
-    ensure => 'installed',
+){
+
+  if !defined(Package['nano']) {
+    package { 'nano':
+      ensure => present,
+    }
   }
 
   if $manage_git_package {
     package { $git_package_name:
-      ensure => 'installed',
+      ensure => present,
     }
   }
+
+  # Get nanorc from GitHub
   vcsrepo { '/usr/local/share/nano':
     ensure   => present,
     provider => git,
@@ -21,11 +28,11 @@ class vision_editors::nano (
   }
 
   file { '/root/.nanorc':
-    ensure => present,
-    owner  => root,
-    group  => root,
-    mode   => '0644',
-    source => 'puppet:///modules/vision_editors/nano/root.nanorc',
+    ensure  => present,
+    owner   => root,
+    group   => root,
+    mode    => '0644',
+    content => file('vision_editors/nano/root.nanorc'),
   }
 
 }

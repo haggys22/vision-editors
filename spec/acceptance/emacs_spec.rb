@@ -3,10 +3,10 @@ require 'spec_helper_acceptance'
 describe 'vision_editors::emacs' do
   context 'with defaults' do
     it 'idempotentlies run' do
-      pp = <<-EOS
+      pp = <<-FILE
                 class { 'vision_editors::emacs':
                 }
-             EOS
+             FILE
       apply_manifest(pp, catch_failures: true)
       apply_manifest(pp, catch_changes: true)
     end

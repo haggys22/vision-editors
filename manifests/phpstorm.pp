@@ -1,10 +1,14 @@
 # Install PhpStorm IDE
+#
 class vision_editors::phpstorm (
+
   String  $base_url,
   String  $version,
   String  $install_target,
   Integer $timeout,
+
 ){
+
   $url      = "${base_url}PhpStorm-${version}.tar.gz"
   $filename = "${install_target}/PhpStorm-${version}.tar.gz"
 
@@ -28,4 +32,5 @@ class vision_editors::phpstorm (
     target    => "${install_target}/phpstorm/bin/phpstorm.sh",
     subscribe => Archive[$filename],
   }
+
 }

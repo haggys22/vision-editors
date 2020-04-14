@@ -2,4 +2,3 @@
 vision_editors::phpstorm::base_url: 'http://download.jetbrains.com/webide/'
 vision_editors::phpstorm::version: '2019.3.3'
 vision_editors::phpstorm::install_target: '/opt'
-vision_editors::phpstorm::timeout: 1200

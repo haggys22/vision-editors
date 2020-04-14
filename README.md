@@ -2,12 +2,6 @@
 
 [![Build Status](https://travis-ci.org/vision-it/vision-editors.svg?branch=production)](https://travis-ci.org/vision-it/vision-editors)
 
-This puppet profile allows the integration of various editors including their
-setup on the nodes.
-
-## Parameter
-
-
 ## Usage
 
 Include in the *Puppetfile*:

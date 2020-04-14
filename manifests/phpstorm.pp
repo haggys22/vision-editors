@@ -1,11 +1,21 @@
-# Install PhpStorm IDE
+# Class: vision_editors:phpstorm
+# ===========================
 #
+# Install PhpStorm IDE y downloading tarball and unpack it
+#
+# Parameters
+# ----------
+#
+# @param base_url Base URL to download tarball
+# @param version PHPStorm Version
+# @param install_target Path to extract tarball to
+#
+
 class vision_editors::phpstorm (
 
   String  $base_url,
   String  $version,
   String  $install_target,
-  Integer $timeout,
 
 ){
 

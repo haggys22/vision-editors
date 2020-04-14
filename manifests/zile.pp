@@ -1,5 +1,12 @@
+# Class: vision_editors:zile
+# ===========================
+#
 # Install and configure zile, a light emacslike editor
 #
+# Parameters
+# ----------
+#
+
 class vision_editors::zile {
 
   if !defined(Package['zile']) {

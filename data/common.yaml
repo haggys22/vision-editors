@@ -1,4 +1,4 @@
 ---
 vision_editors::phpstorm::base_url: 'http://download.jetbrains.com/webide/'
-vision_editors::phpstorm::version: '2020.1.2'
+vision_editors::phpstorm::version: '2020.2'
 vision_editors::phpstorm::install_target: '/opt'
